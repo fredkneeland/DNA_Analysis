@@ -13,7 +13,19 @@ public class Main {
 //        generateRandomDNAStrands(1, 10);
 //        generateImageForFile("./dna/chromo1Section1.txt", "section1", 130, 10000);
 
-        generateImageForFile("./dna/random1.txt", "random1", 130, 10000);
+        generateImageForFile("./dna/random2.txt", "random2", 130, 10000);
+        generateImageForFile("./dna/random3.txt", "random3", 130, 10000);
+        generateImageForFile("./dna/random4.txt", "random4", 130, 10000);
+        generateImageForFile("./dna/random5.txt", "random5", 130, 10000);
+        generateImageForFile("./dna/random6.txt", "random6", 130, 10000);
+        generateImageForFile("./dna/random7.txt", "random7", 130, 10000);
+        generateImageForFile("./dna/random8.txt", "random8", 130, 10000);
+        generateImageForFile("./dna/random9.txt", "random9", 130, 10000);
+        generateImageForFile("./dna/random10.txt", "random10", 130, 10000);
+
+        for (int i = 0; i < 175; i++) {
+            generateImageForFile("./dna/chromo1Section" + i + ".txt", "section" + i, 130, 10000);
+        }
 
 //        System.out.println("done writing");
 //
