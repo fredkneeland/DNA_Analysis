@@ -8,12 +8,12 @@ public class Main {
 //        FileReader reader = new FileReader("./dna/chromosome1.fa");
 //        FileReader reader = new FileReader("./dna/chromo1Section1.txt");
 
-        drawImage();
-        generateImageForFile("./dna/smallChromosome.txt", "small1", 35, 100);
-        generateRandomDNAStrands(1, 10);
-        generateImageForFile("./dna/chromo1Section1.txt", "section1", 130, 10000);
+//        drawImage();
+//        generateImageForFile("./dna/smallChromosome.txt", "small1", 35, 100);
+//        generateRandomDNAStrands(1, 10);
+//        generateImageForFile("./dna/chromo1Section1.txt", "section1", 130, 10000);
 
-
+        generateImageForFile("./dna/random1.txt", "random1", 130, 10000);
 
 //        System.out.println("done writing");
 //
