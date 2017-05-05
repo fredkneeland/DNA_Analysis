@@ -57,20 +57,42 @@ public class FileReader {
         return lines;
     }
 
-    public String[] returnStringsOfSize(int size) {
-        int lineSize = lines[0].length();
-        int sizeCountInLine = lineSize / size;
-        int lineSizeRemainder = lineSize % size;
+    public String merge() {
+        String string = "";
 
-        int newLineCount = lineSize * sizeCountInLine + (lineSize * lineSizeRemainder) / size;
-
-        String[] newLines = new String[newLineCount];
-
-
-        for (int i = 0; i < newLineCount; i++) {
-
+        for (int i = 0; i < lines.length; i++) {
+            string += lines[i];
         }
 
-        return newLines;
+
+        return string;
     }
+
+//    public String[] returnStringsOfSize(int size) {
+//        int lineSize = lines[0].length();
+//        int sizeCountInLine = lineSize / size;
+//        int lineSizeRemainder = lineSize % size;
+//
+//        int newLineCount = lineSize * sizeCountInLine + (lineSize * lineSizeRemainder) / size;
+//
+//        String[] newLines = new String[newLineCount];
+//        int currentRow = 0;
+//        int currentCol = 0;
+//
+//        for (int i = 0; i < newLineCount; i++) {
+//            if (lines[currentRow].length() < (currentCol + size)) {
+//                newLines[i] = lines[currentRow].substring(currentCol, currentCol+size);
+//            } else if (currentRow < lines.length - 1) {
+//                newLines[i] = lines[currentRow].substring(currentCol) + lines[currentRow+1].substring(0, lineSize - currentCol);
+//            }
+//
+//            // update counters
+//            currentCol = (currentCol + size) % lineSize;
+//            if (currentCol < size) {
+//                currentRow++;
+//            }
+//        }
+//
+//        return newLines;
+//    }
 }
