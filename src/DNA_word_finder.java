@@ -43,6 +43,28 @@ public class DNA_word_finder {
         return sizes;
     }
 
+    public Map getSizes2() {
+        if (!sizes.isEmpty()) {
+            return sizes;
+        }
+
+        // loop over the entire strand and look for words
+        int length = dna.length() - size;
+        for (int i = 0; i < length; i++) {
+            String currentWord = dna.substring(i, i+size);
+            int currentCount = 0;
+
+            // if we have already calculated this word then just continue
+            if (sizes.containsKey(currentWord)) {
+                sizes.put(currentWord, sizes.get(currentWord) + 1);
+            } else {
+                sizes.put(currentWord, 1);
+            }
+        }
+
+        return sizes;
+    }
+
     public int getMaxWordCount(int index) {
         int max = 0;
 

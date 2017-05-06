@@ -9,7 +9,7 @@ public class ColorsForWords {
         // find all short words r -> value
         DNA_word_finder finder = new DNA_word_finder(dna, 3);
 
-        finder.getSizes();
+        finder.getSizes2();
         int[] minNMax = finder.getMinAndMax();
         double min = minNMax[0];
         double max = minNMax[1];
@@ -27,7 +27,7 @@ public class ColorsForWords {
         // find all medium words b -> value
         finder = new DNA_word_finder(dna, 5);
 
-        finder.getSizes();
+        finder.getSizes2();
         minNMax = finder.getMinAndMax();
         min = minNMax[0];
         max = minNMax[1];
@@ -46,7 +46,7 @@ public class ColorsForWords {
         // find all long words g -> value
         finder = new DNA_word_finder(dna, 8);
 
-        finder.getSizes();
+        finder.getSizes2();
         minNMax = finder.getMinAndMax();
         min = minNMax[0];
         max = minNMax[1];
@@ -72,7 +72,7 @@ public class ColorsForWords {
         // find all short words r -> value
         DNA_word_finder finder = new DNA_word_finder(dna, 3);
 
-        finder.getSizes();
+        finder.getSizes2();
         double min = min1;
         double max = max1;
 
@@ -85,7 +85,7 @@ public class ColorsForWords {
         // find all medium words b -> value
         finder = new DNA_word_finder(dna, 5);
 
-        finder.getSizes();
+        finder.getSizes2();
         min = min2;
         max = max2;
 
@@ -97,7 +97,7 @@ public class ColorsForWords {
         // find all long words g -> value
         finder = new DNA_word_finder(dna, 8);
 
-        finder.getSizes();
+        finder.getSizes2();
         min = min3;
         max = max3;
 
