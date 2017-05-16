@@ -16,7 +16,8 @@ public class Main {
 
 //        Map<String, Integer>[][] maps = new HashMap<String, Integer>()[185][3];
 
-        generateAbsoluteImagesForChromo1();
+        generateAbsoluteImagesForChromo1_v2();
+//        generateAbsoluteImagesForChromo1();
 
 //        generateImageForFile("./dna/smallChromosome.txt", "./RelativeWordDensities/small1", 35, 100);
 
@@ -56,6 +57,61 @@ public class Main {
 
 
 //        drawRandomImage();
+    }
+
+    public static void generateAbsoluteImagesForChromo1_v2() {
+        String[] dna = new String[185];
+        FileReader reader = null;
+
+
+        DNA_word_finder smallFinder = new DNA_word_finder("", 3);
+        DNA_word_finder mediumFinder = new DNA_word_finder("", 5);
+        DNA_word_finder largeFinder = new DNA_word_finder("", 8);
+
+        for (int i = 0; i < dna.length; i++) {
+            if (i < 10) {
+                reader = new FileReader("./dna/random" + (i+1) + ".txt");
+            } else {
+                reader = new FileReader("./dna/chromo1Section" + (i-10) + ".txt");
+            }
+
+            reader.getFile();
+            dna[i] = reader.merge();
+
+            smallFinder.addToSizes(dna[i]);
+            mediumFinder.addToSizes(dna[i]);
+            largeFinder.addToSizes(dna[i]);
+        }
+
+        int smallMin = smallFinder.getMinAndMax()[0];
+        int smallMax = smallFinder.getMinAndMax()[1];
+        int mediumMin = mediumFinder.getMinAndMax()[0];
+        int mediumMax = mediumFinder.getMinAndMax()[1];
+        int largeMin = largeFinder.getMinAndMax()[0];
+        int largeMax = largeFinder.getMinAndMax()[1];
+
+        // draw the images
+        for (int i = 0; i < dna.length; i++) {
+            System.out.println("generating file for: " + i);
+            String outputFile;
+
+            if (i < 10) {
+                outputFile = "./AbsoluteWordDensities2/random" + (i+1);
+            } else {
+                outputFile = "./AbsoluteWordDensities2/section" + (i-9);
+            }
+
+            ColorsForWords colors = new ColorsForWords();
+            try {
+                smallFinder.dna = dna[i];
+                mediumFinder.dna = dna[i];
+                largeFinder.dna = dna[i];
+                ImageBuilder.generate(outputFile, colors.getColorsFromFinders(smallFinder, mediumFinder, largeFinder,
+                        dna[i], smallMax, smallMin, mediumMax, mediumMin, largeMax, largeMin), 130, 10000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void generateAbsoluteImagesForChromo1() {

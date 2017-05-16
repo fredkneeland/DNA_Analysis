@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class DNA_word_finder {
-    private String dna;
+    public String dna;
     private int size;
     private Map<String, Integer> sizes;
 
@@ -38,6 +38,23 @@ public class DNA_word_finder {
 
             sizes.put(currentWord, currentCount);
 
+        }
+
+        return sizes;
+    }
+
+    public Map addToSizes(String addDna) {
+        // loop over the entire strand and look for words
+        int length = addDna.length() - size;
+        for (int i = 0; i < length; i++) {
+            String currentWord = addDna.substring(i, i+size);
+
+            // if we have already calculated this word then just continue
+            if (sizes.containsKey(currentWord)) {
+                sizes.put(currentWord, sizes.get(currentWord) + 1);
+            } else {
+                sizes.put(currentWord, 1);
+            }
         }
 
         return sizes;
@@ -85,6 +102,7 @@ public class DNA_word_finder {
 
         return max;
     }
+
 
     public int[] getMinAndMax() {
         int max = 0;

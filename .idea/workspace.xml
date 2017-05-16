@@ -2,106 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813b45d8-86c8-407f-ad3f-e7fd025f8800" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random10img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random10img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random1img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random1img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random2img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random2img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random3img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random3img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random4img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random4img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random5img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random5img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random6img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random6img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random7img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random7img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random8img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random8img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/random9img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/random9img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section0img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section0img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section10img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section10img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section11img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section11img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section12img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section12img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section13img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section13img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section14img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section14img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section15img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section15img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section16img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section16img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section17img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section17img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section18img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section18img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section19img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section19img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section1img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section1img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section20img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section20img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section21img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section21img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section22img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section22img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section23img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section23img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section24img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section24img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section25img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section25img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section26img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section26img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section27img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section27img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section28img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section28img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section29img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section29img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section2img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section2img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section30img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section30img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section31img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section31img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section32img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section32img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section33img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section33img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section34img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section34img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section35img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section35img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section36img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section36img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section37img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section37img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section38img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section38img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section39img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section39img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section3img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section3img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section40img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section40img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section41img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section41img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section42img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section42img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section43img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section43img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section44img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section44img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section45img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section45img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section46img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section46img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section47img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section47img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section48img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section48img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section49img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section49img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section4img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section4img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section50img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section50img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section51img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section51img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section52img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section52img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section53img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section53img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section54img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section54img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section55img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section55img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section56img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section56img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section57img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section57img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section58img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section58img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section59img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section59img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section5img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section5img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section60img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section60img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section61img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section61img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section62img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section62img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section63img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section63img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section64img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section64img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section65img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section65img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section66img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section66img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section67img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section67img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section68img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section68img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section69img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section69img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section6img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section6img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section70img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section70img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section71img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section71img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section72img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section72img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section73img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section73img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section74img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section74img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section75img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section75img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section76img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section76img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section77img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section77img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section78img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section78img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section79img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section79img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section7img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section7img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section80img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section80img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section81img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section81img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section82img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section82img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section83img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section83img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section84img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section84img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section85img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section85img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section8img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section8img.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/section9img.jpg" afterPath="$PROJECT_DIR$/RelativeWordDensities/section9img.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ColorsForWords.java" afterPath="$PROJECT_DIR$/src/ColorsForWords.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DNA_word_finder.java" afterPath="$PROJECT_DIR$/src/DNA_word_finder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ImageBuilder.java" afterPath="$PROJECT_DIR$/src/ImageBuilder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="DNA_Analysis.iws" />
@@ -123,22 +25,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="section2img.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/section2img.jpg">
+      <file leaf-file-name="random3img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random3img.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="104" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="random4img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random4img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random5img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random5img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random6img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random6img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random7img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random7img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random8img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random8img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random9img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random9img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random10img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random10img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section1img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section1img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section2img.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section2img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -172,10 +125,10 @@
         <option value="$PROJECT_DIR$/src/FileReader.java" />
         <option value="$PROJECT_DIR$/src/FileWriter.java" />
         <option value="$PROJECT_DIR$/src/RandomGenerator.java" />
-        <option value="$PROJECT_DIR$/src/ColorsForWords.java" />
         <option value="$PROJECT_DIR$/src/ImageBuilder.java" />
-        <option value="$PROJECT_DIR$/src/DNA_word_finder.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/DNA_word_finder.java" />
+        <option value="$PROJECT_DIR$/src/ColorsForWords.java" />
       </list>
     </option>
   </component>
@@ -223,6 +176,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AbsoluteWordDensities2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,201 +560,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section32img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section31img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section30img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section29img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section28img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section27img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section26img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section25img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section24img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section23img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section22img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section81img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section77img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section76img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section75img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section74img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section73img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section72img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/awt/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small1img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small1v2img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section86img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section85img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section84img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section83img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section82img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section80img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section78img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RelativeWordDensities/section79img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ImageBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RelativeWordDensities/small1img.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ColorsForWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DNA_word_finder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random1img.jpg">
@@ -854,11 +643,187 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
-          <caret line="104" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DNA_word_finder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section37img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section36img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section35img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section34img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section29img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section27img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section28img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section30img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section31img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section32img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section33img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ColorsForWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section3img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section4img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section5img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section6img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section7img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section8img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section9img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section10img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section39img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random1img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random2img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random3img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random4img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random5img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random6img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random7img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random8img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random9img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/random10img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section1img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities2/section2img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

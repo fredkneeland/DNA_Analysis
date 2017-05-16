@@ -79,7 +79,7 @@ public class ColorsForWords {
 
         for (int i = 0; i < dnaLength; i++) {
             int val = finder1.getMaxWordCount(i);
-            colors[i][0] = (int) (((val - min) / max) * 250);
+            colors[i][0] = (int) (((val - min) / (max - min)) * 250);
         }
 
 
@@ -90,7 +90,7 @@ public class ColorsForWords {
 
         for (int i = 0; i < dnaLength; i++) {
             int val = finder2.getMaxWordCount(i);
-            colors[i][1] = (int) (((val - min) / max) * 250);
+            colors[i][1] = (int) (((val - min) / (max - min)) * 250);
         }
 
         // find all long words g -> value
@@ -100,7 +100,7 @@ public class ColorsForWords {
 
         for (int i = 0; i < dnaLength; i++) {
             int val = finder3.getMaxWordCount(i);
-            colors[i][2] = (int) (((val - min) / max) * 250);
+            colors[i][2] = (int) (((val - min) / (max - min)) * 250);
         }
 
         return colors;
