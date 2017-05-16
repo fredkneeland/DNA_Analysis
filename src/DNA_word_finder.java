@@ -52,7 +52,6 @@ public class DNA_word_finder {
         int length = dna.length() - size;
         for (int i = 0; i < length; i++) {
             String currentWord = dna.substring(i, i+size);
-            int currentCount = 0;
 
             // if we have already calculated this word then just continue
             if (sizes.containsKey(currentWord)) {

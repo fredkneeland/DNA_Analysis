@@ -20,7 +20,10 @@ public class ColorsForWords {
 
         for (int i = 0; i < dnaLength; i++) {
             int val = finder.getMaxWordCount(i);
-            colors[i][0] = (int) (((val - min) / max) * 250);
+            val = (int) (((val) / max) * 250);
+
+            System.out.println("value: " + val);
+            colors[i][0] = val;
         }
 
 
@@ -65,6 +68,44 @@ public class ColorsForWords {
         return colors;
     }
 
+    public int[][] getColorsFromFinders(DNA_word_finder finder1, DNA_word_finder finder2, DNA_word_finder finder3, String dna, int min1, int max1, int min2, int max2, int min3, int max3) {
+        int dnaLength = dna.length();
+        int[][] colors = new int[dnaLength][3];
+
+        // find all short words r -> value
+        finder1.getSizes2();
+        double min = min1;
+        double max = max1;
+
+        for (int i = 0; i < dnaLength; i++) {
+            int val = finder1.getMaxWordCount(i);
+            colors[i][0] = (int) (((val - min) / max) * 250);
+        }
+
+
+        // find all medium words b -> value
+        finder2.getSizes2();
+        min = min2;
+        max = max2;
+
+        for (int i = 0; i < dnaLength; i++) {
+            int val = finder2.getMaxWordCount(i);
+            colors[i][1] = (int) (((val - min) / max) * 250);
+        }
+
+        // find all long words g -> value
+        finder3.getSizes2();
+        min = min3;
+        max = max3;
+
+        for (int i = 0; i < dnaLength; i++) {
+            int val = finder3.getMaxWordCount(i);
+            colors[i][2] = (int) (((val - min) / max) * 250);
+        }
+
+        return colors;
+    }
+
     public int[][] getAbsoluteColorsForDNA(String dna, int min1, int max1, int min2, int max2, int min3, int max3) {
         int dnaLength = dna.length();
         int[][] colors = new int[dnaLength][3];
@@ -105,8 +146,6 @@ public class ColorsForWords {
             int val = finder.getMaxWordCount(i);
             colors[i][2] = (int) (((val - min) / max) * 250);
         }
-
-        System.out.println("values: ");
 
         return colors;
     }

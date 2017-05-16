@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.*;
 
 /**
  * Created by fredkneeland on 5/1/17.
@@ -13,7 +14,11 @@ public class Main {
 //        generateRandomDNAStrands(1, 10);
 //        generateImageForFile("./dna/chromo1Section1.txt", "section1", 130, 10000);
 
-        generateImageForFile("./dna/smallChromosome.txt", "small1v2", 35, 100);
+//        Map<String, Integer>[][] maps = new HashMap<String, Integer>()[185][3];
+
+        generateAbsoluteImagesForChromo1();
+
+//        generateImageForFile("./dna/smallChromosome.txt", "./RelativeWordDensities/small1", 35, 100);
 
 //        generateImageForFile("./dna/random2.txt", "random2", 130, 10000);
 //        generateImageForFile("./dna/random3.txt", "random3", 130, 10000);
@@ -51,6 +56,80 @@ public class Main {
 
 
 //        drawRandomImage();
+    }
+
+    public static void generateAbsoluteImagesForChromo1() {
+        DNA_word_finder[][] finders = new DNA_word_finder[185][3];
+        String[] dna = new String[185];
+        FileReader reader = null;
+
+        int averageMax1 = 0, averageMin1 = 0, averageMax2 = 0, averageMin2 = 0, averageMax3 = 0, averageMin3 = 0;
+        int count = 0;
+
+        for (int i = 0; i < finders.length; i++) {
+            if (i < 10) {
+                reader = new FileReader("./dna/random" + (i+1) + ".txt");
+            } else {
+                reader = new FileReader("./dna/chromo1Section" + (i-10) + ".txt");
+            }
+
+            reader.getFile();
+            dna[i] = reader.merge();
+            finders[i][0] = new DNA_word_finder(dna[i], 3);
+            finders[i][0].getSizes2();
+
+            finders[i][1] = new DNA_word_finder(dna[i], 5);
+            finders[i][1].getSizes2();
+
+            finders[i][2] = new DNA_word_finder(dna[i], 8);
+            finders[i][2].getSizes2();
+
+            int[] minNMax = finders[i][0].getMinAndMax();
+            averageMax1 += minNMax[1];
+            averageMin1 += minNMax[0];
+
+            minNMax = finders[i][1].getMinAndMax();
+            averageMax2 += minNMax[1];
+            averageMin2 += minNMax[0];
+
+            minNMax = finders[i][2].getMinAndMax();
+            averageMax3 += minNMax[1];
+            averageMin3 += minNMax[0];
+
+            count++;
+
+            System.out.println("Current Averages Max1: " + (averageMax1 / count) + " Max2: " + (averageMax2 / count) +
+                    " Max3: " + (averageMax3 / count) + " Min1: " + (averageMin1 / count) + " Min2: " + (averageMin2 / count) +
+                    " Min3: " + (averageMin3 / count));
+            System.out.println("count: " + count);
+        }
+
+        averageMax1 /= count;
+        averageMax2 /= count;
+        averageMax3 /= count;
+
+        averageMin1 /= count;
+        averageMin2 /= count;
+        averageMin3 /= count;
+
+        // draw the images
+        for (int i = 0; i < finders.length; i++) {
+            System.out.println("generating file for: " + i);
+            String outputFile;
+
+            if (i < 10) {
+                outputFile = "./AbsoluteWordDensities/random" + (i+1);
+            } else {
+                outputFile = "./AbsoluteWordDensities/section" + (i-9);
+            }
+
+            ColorsForWords colors = new ColorsForWords();
+            try {
+                ImageBuilder.generate(outputFile, colors.getColorsFromFinders(finders[i][0], finders[i][1], finders[i][2], dna[i], averageMax1, averageMin1, averageMax2, averageMin2, averageMax3, averageMin3), 130, 10000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void generateImageForFile(String fileName, String outputFile, int width, int height) {
