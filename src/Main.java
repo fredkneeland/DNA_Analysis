@@ -16,8 +16,10 @@ public class Main {
 
 //        Map<String, Integer>[][] maps = new HashMap<String, Integer>()[185][3];
 
-        generateAbsoluteImagesForChromo1_v2();
+//        generateAbsoluteImagesForChromo1_v2();
 //        generateAbsoluteImagesForChromo1();
+
+        generateImageForFile("./dna/Bible.txt", "bibleOutput", 130, 10000);
 
 //        generateImageForFile("./dna/smallChromosome.txt", "./RelativeWordDensities/small1", 35, 100);
 
