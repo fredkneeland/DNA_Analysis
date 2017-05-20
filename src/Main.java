@@ -19,7 +19,9 @@ public class Main {
 //        generateAbsoluteImagesForChromo1_v2();
 //        generateAbsoluteImagesForChromo1();
 
-        generateImageForFile("./dna/Bible.txt", "bibleOutput", 130, 10000);
+          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
+
+//        generateImageForFile("./dna/Bible.txt", "bibleOutput", 130, 10000);
 
 //        generateImageForFile("./dna/smallChromosome.txt", "./RelativeWordDensities/small1", 35, 100);
 
@@ -254,5 +256,13 @@ public class Main {
         for (int i = 0; i < 175; i++) {
             writer.writeToFile(reader.getFile(), "./dna/chromo1Section" + i + ".txt", i * size, (i + 1) * size);
         }
+    }
+
+    public static void writeHexToDNA(String input, String output) {
+        HexConvertor convertor = new HexConvertor();
+        String hexFileToDNA = convertor.convertHexFileToDNA(input);
+
+        FileWriter writer = new FileWriter();
+        writer.writeStringToFile(hexFileToDNA, output);
     }
 }
