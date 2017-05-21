@@ -33,8 +33,22 @@ public class HexConvertor {
         String string = reader.merge();
         String newString = "";
 
+        System.out.println("string length: " + string.length());
+
         for (int i = 0; i < string.length(); i++) {
-            newString += getDNAString("" + string.charAt(i));
+            String currentString = "" + string.charAt(i);
+
+            if (i == string.length() / 4) {
+                System.out.println("one quarter done");
+            } else if (i == string.length() / 2) {
+                System.out.println("half way done");
+            } else if (i == string.length() / 4 * 3) {
+                System.out.println("3/4 done");
+            }
+
+            if (hashMap.containsKey(currentString)) {
+                newString += getDNAString(currentString);
+            }
         }
 
         return newString;
