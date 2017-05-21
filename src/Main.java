@@ -19,7 +19,24 @@ public class Main {
 //        generateAbsoluteImagesForChromo1_v2();
 //        generateAbsoluteImagesForChromo1();
 
-          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
+//          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
+
+//        generateImageForStartAndStop("./dna/chromo1Section1.txt", "./StartAndStop/startAndStopSection1", 130, 10000);
+
+        generateImageForStartAndStop("./dna/random1.txt", "./StartAndStop/startAndStoprandom1", 130, 10000);
+        generateImageForStartAndStop("./dna/random2.txt", "./StartAndStop/startAndStoprandom2", 130, 10000);
+        generateImageForStartAndStop("./dna/random3.txt", "./StartAndStop/startAndStoprandom3", 130, 10000);
+        generateImageForStartAndStop("./dna/random4.txt", "./StartAndStop/startAndStoprandom4", 130, 10000);
+        generateImageForStartAndStop("./dna/random5.txt", "./StartAndStop/startAndStoprandom5", 130, 10000);
+        generateImageForStartAndStop("./dna/random6.txt", "./StartAndStop/startAndStoprandom6", 130, 10000);
+        generateImageForStartAndStop("./dna/random7.txt", "./StartAndStop/startAndStoprandom7", 130, 10000);
+        generateImageForStartAndStop("./dna/random8.txt", "./StartAndStop/startAndStoprandom8", 130, 10000);
+        generateImageForStartAndStop("./dna/random9.txt", "./StartAndStop/startAndStoprandom9", 130, 10000);
+        generateImageForStartAndStop("./dna/random10.txt", "./StartAndStop/startAndStoprandom10", 130, 10000);
+
+        for (int i = 0; i < 175; i++) {
+            generateImageForStartAndStop("./dna/chromo1Section" + i + ".txt", "./StartAndStop/startAndStopSection" + i, 130, 10000);
+        }
 
 //        generateImageForFile("./dna/Bible.txt", "bibleOutput", 130, 10000);
 
@@ -201,6 +218,19 @@ public class Main {
 
         try {
             ImageBuilder.generate(outputFile, colors.getColorsForWords(dna), width, height);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void generateImageForStartAndStop(String fileName, String outputFile, int width, int height) {
+        FileReader reader = new FileReader(fileName);
+        reader.getFile();
+        String dna = reader.merge();
+        System.out.println("len: " + dna.length());
+
+        try {
+            ImageBuilder.generate(outputFile, StartAndStop.getColorsForWords(dna), width, height);
         } catch (Exception e) {
             e.printStackTrace();
         }
