@@ -1,6 +1,5 @@
-/**
- * Created by fredkneeland on 5/3/17.
- */
+import java.util.*;
+
 public class ColorsForWords {
     public int[][] getColorsForWords(String dna) {
         int dnaLength = dna.length();
@@ -67,6 +66,41 @@ public class ColorsForWords {
 
         return colors;
     }
+
+    public int[][] getInverseComplimentColors(DNA_word_finder finder1, String dna) {
+        Map top3 = finder1.getTopWordsAndInverseCompliments(3);
+        int dnaLength = dna.length();
+        int[][] colors = new int[dnaLength][3];
+        System.out.println("top3: " + top3);
+
+        for (int i = 0; i < dnaLength; i++) {
+            int val = finder1.getWordCountFromMap(i, top3);
+
+            if (val == -1) {
+                colors[i][0] = 0;
+                colors[i][1] = 0;
+                colors[i][2] = 0;
+            } else {
+                colors[i][1] = 0;
+
+                if (val % 2 == 0) {
+                    colors[i][2] = 0;
+
+                    colors[i][0] = 255 - (25 * val);
+
+                } else {
+                    colors[i][0] = 0;
+
+                    colors[i][2] = 255 - (25 * val);
+                }
+            }
+        }
+
+
+        return colors;
+    }
+
+
 
     public int[][] getColorsFromFinders(DNA_word_finder finder1, DNA_word_finder finder2, DNA_word_finder finder3, String dna, int min1, int max1, int min2, int max2, int min3, int max3) {
         int dnaLength = dna.length();

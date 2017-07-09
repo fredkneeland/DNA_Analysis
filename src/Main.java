@@ -18,25 +18,27 @@ public class Main {
 
 //        generateAbsoluteImagesForChromo1_v2();
 //        generateAbsoluteImagesForChromo1();
+            generateInverseColors();
 
 //          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
 
+
 //        generateImageForStartAndStop("./dna/chromo1Section1.txt", "./StartAndStop/startAndStopSection1", 130, 10000);
 
-        generateImageForStartAndStop("./dna/random1.txt", "./StartAndStop/startAndStoprandom1", 130, 10000);
-        generateImageForStartAndStop("./dna/random2.txt", "./StartAndStop/startAndStoprandom2", 130, 10000);
-        generateImageForStartAndStop("./dna/random3.txt", "./StartAndStop/startAndStoprandom3", 130, 10000);
-        generateImageForStartAndStop("./dna/random4.txt", "./StartAndStop/startAndStoprandom4", 130, 10000);
-        generateImageForStartAndStop("./dna/random5.txt", "./StartAndStop/startAndStoprandom5", 130, 10000);
-        generateImageForStartAndStop("./dna/random6.txt", "./StartAndStop/startAndStoprandom6", 130, 10000);
-        generateImageForStartAndStop("./dna/random7.txt", "./StartAndStop/startAndStoprandom7", 130, 10000);
-        generateImageForStartAndStop("./dna/random8.txt", "./StartAndStop/startAndStoprandom8", 130, 10000);
-        generateImageForStartAndStop("./dna/random9.txt", "./StartAndStop/startAndStoprandom9", 130, 10000);
-        generateImageForStartAndStop("./dna/random10.txt", "./StartAndStop/startAndStoprandom10", 130, 10000);
-
-        for (int i = 0; i < 175; i++) {
-            generateImageForStartAndStop("./dna/chromo1Section" + i + ".txt", "./StartAndStop/startAndStopSection" + i, 130, 10000);
-        }
+//        generateImageForStartAndStop("./dna/random1.txt", "./StartAndStop/startAndStoprandom1", 130, 10000);
+//        generateImageForStartAndStop("./dna/random2.txt", "./StartAndStop/startAndStoprandom2", 130, 10000);
+//        generateImageForStartAndStop("./dna/random3.txt", "./StartAndStop/startAndStoprandom3", 130, 10000);
+//        generateImageForStartAndStop("./dna/random4.txt", "./StartAndStop/startAndStoprandom4", 130, 10000);
+//        generateImageForStartAndStop("./dna/random5.txt", "./StartAndStop/startAndStoprandom5", 130, 10000);
+//        generateImageForStartAndStop("./dna/random6.txt", "./StartAndStop/startAndStoprandom6", 130, 10000);
+//        generateImageForStartAndStop("./dna/random7.txt", "./StartAndStop/startAndStoprandom7", 130, 10000);
+//        generateImageForStartAndStop("./dna/random8.txt", "./StartAndStop/startAndStoprandom8", 130, 10000);
+//        generateImageForStartAndStop("./dna/random9.txt", "./StartAndStop/startAndStoprandom9", 130, 10000);
+//        generateImageForStartAndStop("./dna/random10.txt", "./StartAndStop/startAndStoprandom10", 130, 10000);
+//
+//        for (int i = 0; i < 175; i++) {
+//            generateImageForStartAndStop("./dna/chromo1Section" + i + ".txt", "./StartAndStop/startAndStopSection" + i, 130, 10000);
+//        }
 
 //        generateImageForFile("./dna/Bible.txt", "bibleOutput", 130, 10000);
 
@@ -79,6 +81,41 @@ public class Main {
 
 //        drawRandomImage();
     }
+
+    // getInverseComplimentColors
+    public static void generateInverseColors() {
+        String[] dna = new String[175];
+        FileReader reader = null;
+
+
+        DNA_word_finder mediumFinder = new DNA_word_finder("", 5);
+
+        for (int i = 0; i < dna.length; i++) {
+            reader = new FileReader("./dna/chromo1Section" + (i) + ".txt");
+
+            reader.getFile();
+            dna[i] = reader.merge();
+
+            mediumFinder.addToSizes(dna[i]);
+        }
+
+        // draw the images
+        for (int i = 0; i < dna.length; i++) {
+            System.out.println("generating file for: " + i);
+            String outputFile;
+            outputFile = "./InverseCompliment/section" + (i);
+
+            ColorsForWords colors = new ColorsForWords();
+            try {
+                mediumFinder.dna = dna[i];
+                ImageBuilder.generate(outputFile, colors.getInverseComplimentColors(mediumFinder, dna[i]), 130, 10000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
 
     public static void generateAbsoluteImagesForChromo1_v2() {
         String[] dna = new String[185];
@@ -256,7 +293,6 @@ public class Main {
                 values[i][1] = 250;
                 values[i][2] = 250;
             }
-
         }
 
         try {
