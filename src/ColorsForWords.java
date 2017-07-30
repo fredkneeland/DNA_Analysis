@@ -67,6 +67,76 @@ public class ColorsForWords {
         return colors;
     }
 
+    public char complimentOf(char a) {
+        switch (a) {
+            case 'A':
+                return 'T';
+            case 'T':
+                return 'A';
+            case 'G':
+                return 'C';
+            case 'C':
+                return 'G';
+            default:
+                return 'q'; // to prevent 'N' from showing up on the unknown regions
+        }
+    }
+
+    public int[][] getWrappedInverseComplimentColors(String dna) {
+        int dnaLength = dna.length();
+        int[][] colors = new int[dnaLength][3];
+
+        int currentSpotInStack = 0;
+        char[] letters = new char[dnaLength];
+
+        int longest = 0;
+        int current = 0;
+
+        for (int i = 0; i < dnaLength; i++) {
+            letters[i] = dna.charAt(i);
+            if (i == 0) {
+                continue;
+            }
+
+            if (currentSpotInStack < 0) {
+                System.out.println("Before start of stack");
+                currentSpotInStack = i - 1;
+            }
+
+            boolean val = letters[currentSpotInStack] == complimentOf(dna.charAt(i));
+
+            if (!val) {
+                colors[i][0] = 0;
+                colors[i][1] = 0;
+                colors[i][2] = 0;
+
+                currentSpotInStack = i;
+
+                if (current > longest) {
+                    longest = current;
+                }
+                current = 0;
+            } else {
+                colors[i][1] = 0;
+
+                // before;
+                colors[i][2] = 0;
+                colors[i][0] = 255;
+
+                // after TODO: implement this
+                colors[currentSpotInStack][0] = 0;
+                colors[currentSpotInStack][2] = 255;
+
+                // update counter
+                currentSpotInStack--;
+                current++;
+            }
+        }
+
+        System.out.println("longest: " + longest);
+        return colors;
+    }
+
     public int[][] getInverseComplimentColors(DNA_word_finder finder1, String dna) {
         Map top3 = finder1.getTopWordsAndInverseCompliments(3);
         int dnaLength = dna.length();

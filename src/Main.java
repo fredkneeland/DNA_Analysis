@@ -18,7 +18,9 @@ public class Main {
 
 //        generateAbsoluteImagesForChromo1_v2();
 //        generateAbsoluteImagesForChromo1();
-            generateInverseColors();
+
+          getWrappedInverseComplimentColors();
+//            generateInverseColors();
 
 //          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
 
@@ -80,6 +82,34 @@ public class Main {
 
 
 //        drawRandomImage();
+    }
+
+    // getWrappedInverseComplimentColors
+    public static void getWrappedInverseComplimentColors() {
+        String[] dna = new String[175];
+        FileReader reader = null;
+
+
+        for (int i = 0; i < dna.length; i++) {
+            reader = new FileReader("./dna/chromo1Section" + (i) + ".txt");
+
+            reader.getFile();
+            dna[i] = reader.merge();
+        }
+
+        // draw the images
+        for (int i = 0; i < dna.length; i++) {
+            System.out.println("generating file for: " + i);
+            String outputFile;
+            outputFile = "./WrappedInverseCompliment/section" + (i);
+
+            ColorsForWords colors = new ColorsForWords();
+            try {
+                ImageBuilder.generate(outputFile, colors.getWrappedInverseComplimentColors(dna[i]), 130, 10000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     // getInverseComplimentColors
