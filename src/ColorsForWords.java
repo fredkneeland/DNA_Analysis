@@ -91,6 +91,8 @@ public class ColorsForWords {
 
         int longest = 0;
         int current = 0;
+        int totalNumberOfCompliments = 0;
+        int totalLengthOfCompliments = 0;
 
         for (int i = 0; i < dnaLength; i++) {
             letters[i] = dna.charAt(i);
@@ -115,6 +117,11 @@ public class ColorsForWords {
                 if (current > longest) {
                     longest = current;
                 }
+                if (current > 1) {
+                    totalNumberOfCompliments++;
+                    totalLengthOfCompliments += current;
+                }
+
                 current = 0;
             } else {
                 colors[i][1] = 0;
@@ -133,7 +140,7 @@ public class ColorsForWords {
             }
         }
 
-        System.out.println("longest: " + longest);
+        System.out.println("longest: " + longest + " Average: " + (totalLengthOfCompliments / totalNumberOfCompliments) + " total number: " + totalNumberOfCompliments + " total length: " + totalLengthOfCompliments);
         return colors;
     }
 

@@ -99,7 +99,6 @@ public class Main {
 
         // draw the images
         for (int i = 0; i < dna.length; i++) {
-            System.out.println("generating file for: " + i);
             String outputFile;
             outputFile = "./WrappedInverseCompliment/section" + (i);
 
