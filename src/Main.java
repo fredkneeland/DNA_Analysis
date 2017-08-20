@@ -19,7 +19,10 @@ public class Main {
 //        generateAbsoluteImagesForChromo1_v2();
 //        generateAbsoluteImagesForChromo1();
 
-          getWrappedInverseComplimentColors();
+
+        getInverseCompliments();
+
+//          getWrappedInverseComplimentColors();
 //            generateInverseColors();
 
 //          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
@@ -82,6 +85,67 @@ public class Main {
 
 
 //        drawRandomImage();
+    }
+
+    public static void getInverseCompliments() {
+        String[] dna = new String[175];
+        FileReader reader = null;
+
+
+        for (int i = 0; i < dna.length; i++) {
+            reader = new FileReader("./dna/chromo1Section" + (i) + ".txt");
+
+            reader.getFile();
+            dna[i] = reader.merge();
+        }
+
+        int[] sizes = new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+
+        for (int i = 0; i < sizes.length; i++) {
+            long size = 0;
+            int largest = 0;
+            int smallest = 99999;
+            double average = 0;
+
+
+            for (int j = 0; j < dna.length; j++) {
+                ArrayList<int[]> pairs = InverseCompliment.getAllInverseComplimentPairs(dna[j], sizes[i]);
+                size += pairs.size();
+
+                for (int k = 0; k < pairs.size(); k++) {
+                    int[] pair = pairs.get(k);
+                    int current = pair[1] - pair[0];
+
+                    if (current > largest) {
+                        largest = current;
+                    }
+
+                    if (current < smallest) {
+                        smallest = current;
+                    }
+
+                    average += current;
+                }
+            }
+
+            average /= (double) (size + 1);
+
+            System.out.println("Number of Inverse Compliments: " + size + " for middle size: " + sizes[i] + " average: " + String.format("%.02f", average) + " largest: " + largest + " smallest: " + smallest);
+
+        }
+
+        // draw the images
+//        for (int i = 0; i < dna.length; i++) {
+////            String outputFile;
+////            outputFile = "./WrappedInverseCompliment/section" + (i);
+////
+////            ColorsForWords colors = new ColorsForWords();
+////            try {
+////                ImageBuilder.generate(outputFile, colors.getWrappedInverseComplimentColors(dna[i]), 130, 10000);
+////            } catch (Exception e) {
+////                e.printStackTrace();
+//            }
+//        }
     }
 
     // getWrappedInverseComplimentColors
