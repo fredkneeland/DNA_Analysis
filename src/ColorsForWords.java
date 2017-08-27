@@ -94,8 +94,10 @@ public class ColorsForWords {
         for (int i = 0; i < 20; i++) {
             pairs[i] = InverseCompliment.getAllInverseComplimentPairs(dna, i);
             pairsCurrentIndex[i] = 0;
-            pairsCurrentStart[i] = pairs[i].get(0)[0];
-            pairsCurrentEnd[i] = pairs[i].get(0)[1];
+            if (pairs[i].size() > 0) {
+                pairsCurrentStart[i] = pairs[i].get(0)[0];
+                pairsCurrentEnd[i] = pairs[i].get(0)[1];
+            }
         }
 
         for (int i = 0; i < dnaLength; i++) {
