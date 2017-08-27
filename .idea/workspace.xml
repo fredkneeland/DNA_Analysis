@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="813b45d8-86c8-407f-ad3f-e7fd025f8800" name="Default" comment="" />
+    <list default="true" id="813b45d8-86c8-407f-ad3f-e7fd025f8800" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ColorsForWords.java" afterPath="$PROJECT_DIR$/src/ColorsForWords.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ImageBuilder.java" afterPath="$PROJECT_DIR$/src/ImageBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+    </list>
     <ignored path="DNA_Analysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +28,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="107" column="51" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="51" />
+            <state relative-caret-position="259">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,17 +40,10 @@
       <file leaf-file-name="ImageBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ImageBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="29" column="63" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="63" />
+            <state relative-caret-position="513">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="section1img.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment/section1img.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -57,23 +54,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chromo1Section1.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dna/chromo1Section1.txt">
+      <file leaf-file-name="ColorsForWords.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColorsForWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="136421" selection-start-line="0" selection-start-column="136417" selection-end-line="0" selection-end-column="136421" />
+            <state relative-caret-position="347">
+              <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColorsForWords.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ColorsForWords.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="84" column="51" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="51" />
-              <folding />
-            </state>
+      <file leaf-file-name="section0img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section0img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section1img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section1img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section3img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section3img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section4img.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section4img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section7img.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section7img.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -124,15 +146,15 @@
         <option value="$PROJECT_DIR$/dna/smallChromosome.txt" />
         <option value="$PROJECT_DIR$/src/FileReader.java" />
         <option value="$PROJECT_DIR$/src/RandomGenerator.java" />
-        <option value="$PROJECT_DIR$/src/ImageBuilder.java" />
         <option value="$PROJECT_DIR$/src/DNA_word_finder.java" />
         <option value="$PROJECT_DIR$/dna/Bible.txt" />
         <option value="$PROJECT_DIR$/src/FileWriter.java" />
         <option value="$PROJECT_DIR$/src/HexConvertor.java" />
         <option value="$PROJECT_DIR$/src/StartAndStop.java" />
         <option value="$PROJECT_DIR$/src/InverseCompliment.java" />
-        <option value="$PROJECT_DIR$/src/ColorsForWords.java" />
+        <option value="$PROJECT_DIR$/src/ImageBuilder.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ColorsForWords.java" />
       </list>
     </option>
   </component>
@@ -195,7 +217,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dna" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DNA_Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpacedInverseCompliment2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -597,31 +633,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random3img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random5img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random6img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random7img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random8img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AbsoluteWordDensities/random9img.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -813,6 +824,24 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment/section1img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dna/chromo1Section1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="136421" selection-start-line="0" selection-start-column="136417" selection-end-line="0" selection-end-column="136421" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment/section2img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/InverseCompliment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -829,48 +858,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ColorsForWords.java">
+    <entry file="file://$PROJECT_DIR$/src/ImageBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="84" column="51" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="51" />
+        <state relative-caret-position="513">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="107" column="51" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="51" />
+        <state relative-caret-position="259">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ImageBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/ColorsForWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="63" />
+        <state relative-caret-position="347">
+          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment/section1img.jpg">
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section0img.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment/section2img.jpg">
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section1img.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dna/chromo1Section1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="136421" selection-start-line="0" selection-start-column="136417" selection-end-line="0" selection-end-column="136421" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section3img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section4img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpacedInverseCompliment2/section7img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

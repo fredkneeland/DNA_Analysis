@@ -82,6 +82,57 @@ public class ColorsForWords {
         }
     }
 
+    public int[][] getAllSpacedInverseComplimentColors(String dna) {
+        int dnaLength = dna.length();
+        int[][] colors = new int[dnaLength][3];
+
+        ArrayList<int[]>[] pairs = new ArrayList[20];
+        int[] pairsCurrentIndex = new int[20];
+        int[] pairsCurrentStart = new int[20];
+        int[] pairsCurrentEnd = new int[20];
+
+        for (int i = 0; i < 20; i++) {
+            pairs[i] = InverseCompliment.getAllInverseComplimentPairs(dna, i);
+            pairsCurrentIndex[i] = 0;
+            pairsCurrentStart[i] = pairs[i].get(0)[0];
+            pairsCurrentEnd[i] = pairs[i].get(0)[1];
+        }
+
+        for (int i = 0; i < dnaLength; i++) {
+            int red = 0;
+            int green = 0;
+            int blue = 0;
+
+            for (int j = 0; j < pairs.length; j++) {
+                if (i >= pairsCurrentStart[j]) {
+                    if (i <= pairsCurrentEnd[j]) {
+                        if (j <= 6) {
+                            red = 255;
+                        } else if (j <= 12) {
+                            green = 255;
+                        } else {
+                            blue = 255;
+                        }
+
+                    } else {
+                        pairsCurrentIndex[j]++;
+                        if (pairsCurrentIndex[j] < pairs[j].size()) {
+                            pairsCurrentStart[j] = pairs[j].get(pairsCurrentIndex[j])[0];
+                            pairsCurrentEnd[j] = pairs[j].get(pairsCurrentIndex[j])[1];
+                        }
+                    }
+                }
+            }
+
+            colors[i][0] = red;
+            colors[i][1] = green;
+            colors[i][2] = blue;
+        }
+
+        return colors;
+    }
+
+
     public int[][] getSpacedInverseComplimentColors(String dna) {
         int dnaLength = dna.length();
         int[][] colors = new int[dnaLength][3];

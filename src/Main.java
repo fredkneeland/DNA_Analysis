@@ -22,7 +22,7 @@ public class Main {
 
 //        getInverseCompliments();
 
-        getInverseComplimentsImages();
+        getInverseComplimentsImages2();
 
 //          getWrappedInverseComplimentColors();
 //            generateInverseColors();
@@ -87,6 +87,35 @@ public class Main {
 
 
 //        drawRandomImage();
+    }
+
+    public static void getInverseComplimentsImages2() {
+        String[] dna = new String[175];
+        FileReader reader = null;
+
+
+        for (int i = 0; i < dna.length; i++) {
+            reader = new FileReader("./dna/chromo1Section" + (i) + ".txt");
+
+            reader.getFile();
+            dna[i] = reader.merge();
+        }
+
+        // draw the images
+        for (int i = 0; i < dna.length; i++) {
+            String outputFile;
+            outputFile = "./SpacedInverseCompliment2/section" + (i);
+
+            ColorsForWords colors = new ColorsForWords();
+
+            try {
+                ImageBuilder.generate(outputFile, colors.getAllSpacedInverseComplimentColors(dna[i]), 130, 10000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+//        getSpacedInverseComplimentColors();
     }
 
 

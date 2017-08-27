@@ -27,9 +27,15 @@ public class ImageBuilder {
                 y = i;
 
                 int index = y * width + x;
-                int rVal = Math.min(255, Math.max(0, rgbs[index][0]));
-                int gVal = Math.min(255, Math.max(0, rgbs[index][1]));
-                int bVal = Math.min(255, Math.max(0, rgbs[index][2]));
+                int rVal = 0;
+                int gVal = 0;
+                int bVal = 0;
+
+                if (index < rgbs.length) {
+                    rVal = Math.min(255, Math.max(0, rgbs[index][0]));
+                    gVal = Math.min(255, Math.max(0, rgbs[index][1]));
+                    bVal = Math.min(255, Math.max(0, rgbs[index][2]));
+                }
 
                 g.setColor(new Color(rVal, gVal, bVal));
 
