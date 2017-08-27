@@ -20,7 +20,9 @@ public class Main {
 //        generateAbsoluteImagesForChromo1();
 
 
-        getInverseCompliments();
+//        getInverseCompliments();
+
+        getInverseComplimentsImages();
 
 //          getWrappedInverseComplimentColors();
 //            generateInverseColors();
@@ -87,6 +89,35 @@ public class Main {
 //        drawRandomImage();
     }
 
+
+    public static void getInverseComplimentsImages() {
+        String[] dna = new String[175];
+        FileReader reader = null;
+
+
+        for (int i = 0; i < dna.length; i++) {
+            reader = new FileReader("./dna/chromo1Section" + (i) + ".txt");
+
+            reader.getFile();
+            dna[i] = reader.merge();
+        }
+
+        // draw the images
+        for (int i = 0; i < dna.length; i++) {
+            String outputFile;
+            outputFile = "./SpacedInverseCompliment/section" + (i);
+
+            ColorsForWords colors = new ColorsForWords();
+            try {
+                ImageBuilder.generate(outputFile, colors.getSpacedInverseComplimentColors(dna[i]), 130, 10000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+//        getSpacedInverseComplimentColors();
+    }
+
     public static void getInverseCompliments() {
         String[] dna = new String[175];
         FileReader reader = null;
@@ -106,11 +137,13 @@ public class Main {
             int largest = 0;
             int smallest = 99999;
             double average = 0;
+            int dnaLength = 0;
 
 
             for (int j = 0; j < dna.length; j++) {
                 ArrayList<int[]> pairs = InverseCompliment.getAllInverseComplimentPairs(dna[j], sizes[i]);
                 size += pairs.size();
+                dnaLength += dna[j].length();
 
                 for (int k = 0; k < pairs.size(); k++) {
                     int[] pair = pairs.get(k);
@@ -130,7 +163,7 @@ public class Main {
 
             average /= (double) (size + 1);
 
-            System.out.println("Number of Inverse Compliments: " + size + " for middle size: " + sizes[i] + " average: " + String.format("%.02f", average) + " largest: " + largest + " smallest: " + smallest);
+            System.out.println("Number of Inverse Compliments: " + size + " for middle size: " + sizes[i] + " average: " + String.format("%.02f", average) + " largest: " + largest + " smallest: " + smallest + " dna total length: " + dnaLength);
 
         }
 

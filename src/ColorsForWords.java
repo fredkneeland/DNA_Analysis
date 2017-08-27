@@ -82,6 +82,78 @@ public class ColorsForWords {
         }
     }
 
+    public int[][] getSpacedInverseComplimentColors(String dna) {
+        int dnaLength = dna.length();
+        int[][] colors = new int[dnaLength][3];
+
+        ArrayList<int[]> pairs0 = InverseCompliment.getAllInverseComplimentPairs(dna, 0);
+        ArrayList<int[]> pairs5 = InverseCompliment.getAllInverseComplimentPairs(dna, 5);
+        ArrayList<int[]> pairs10 = InverseCompliment.getAllInverseComplimentPairs(dna, 10);
+
+        int pair0CurrentIndex = 0;
+        int pair5CurrentIndex = 0;
+        int pair10CurrentIndex = 0;
+
+        int pair0CurrentStart = pairs0.get(0)[0];
+        int pair5CurrentStart = pairs5.get(0)[0];
+        int pair10CurrentStart = pairs10.get(0)[0];
+
+        int pair0CurrentEnd = pairs0.get(0)[1];
+        int pair5CurrentEnd = pairs5.get(0)[1];
+        int pair10CurrentEnd = pairs10.get(0)[1];
+
+        for (int i = 0; i < dnaLength; i++) {
+            int red = 0;
+            int green = 0;
+            int blue = 0;
+
+            // grab red color
+            if (i >= pair0CurrentStart) {
+                if (i <= pair0CurrentEnd) {
+                    red = 255;
+                } else {
+                    pair0CurrentIndex++;
+                    if (pair0CurrentIndex < pairs0.size()) {
+                        pair0CurrentStart = pairs0.get(pair0CurrentIndex)[0];
+                        pair0CurrentEnd = pairs0.get(pair0CurrentIndex)[1];
+                    }
+                }
+            }
+
+            // grab green color
+            if (i >= pair5CurrentStart) {
+                if (i <= pair5CurrentEnd) {
+                    green = 255;
+                } else {
+                    pair5CurrentIndex++;
+                    if (pair5CurrentIndex < pairs5.size()) {
+                        pair5CurrentStart = pairs5.get(pair5CurrentIndex)[0];
+                        pair5CurrentEnd = pairs5.get(pair5CurrentIndex)[1];
+                    }
+                }
+            }
+
+            // grab blue color
+            if (i >= pair10CurrentStart) {
+                if (i <= pair10CurrentEnd) {
+                    blue = 255;
+                } else {
+                    pair10CurrentIndex++;
+                    if (pair10CurrentIndex < pairs10.size()) {
+                        pair10CurrentStart = pairs10.get(pair10CurrentIndex)[0];
+                        pair10CurrentEnd = pairs10.get(pair10CurrentIndex)[1];
+                    }
+                }
+            }
+
+            colors[i][0] = red;
+            colors[i][1] = green;
+            colors[i][2] = blue;
+        }
+
+        return colors;
+    }
+
     public int[][] getWrappedInverseComplimentColors(String dna) {
         int dnaLength = dna.length();
         int[][] colors = new int[dnaLength][3];
