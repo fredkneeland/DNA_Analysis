@@ -23,7 +23,10 @@ public class Main {
 //        getInverseCompliments();
 
 //        getInverseComplimentsImages2Random();
-        getInverseComplimentsImages2();
+//        getInverseComplimentsImages2();
+
+        getInverseComplimentStart();
+
 
 //          getWrappedInverseComplimentColors();
 //            generateInverseColors();
@@ -90,6 +93,68 @@ public class Main {
 //        drawRandomImage();
     }
 
+    public static void getInverseComplimentStart() {
+        String[] dna = new String[175];
+        FileReader reader = null;
+
+
+        for (int i = 0; i < dna.length; i++) {
+            reader = new FileReader("./dna/chromo1Section" + (i) + ".txt");
+
+            reader.getFile();
+            dna[i] = reader.merge();
+        }
+
+        Map<String, Integer> map = new HashMap<>();
+        Map<String, Map<Integer, Integer>> wordDistances = new HashMap<>();
+        ColorsForWords colors = new ColorsForWords();
+
+        // draw the images
+        for (int i = 0; i < dna.length; i++) {
+            try {
+//                colors.getWordStartsForInverseCompliments2(dna[i], map, wordDistances);
+                colors.getWordStartsForInverseCompliments(dna[i], map);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+//        System.out.println();
+//        for (String key : wordDistances.keySet()) {
+//            System.out.print(key);
+//
+//            for (int count : wordDistances.get(key).keySet()) {
+//                System.out.print("," + wordDistances.get(key).get(count));
+//            }
+//
+//            System.out.println();
+//        }
+
+
+        for (String key : map.keySet()) {
+            System.out.println(key);
+        }
+
+        for (String key : map.keySet()) {
+            System.out.println(map.get(key));
+        }
+
+        int total = 0;
+
+        for (String key : map.keySet()) {
+            int value = map.get(key);
+            total += value;
+            if (value > 1000) {
+                System.out.println(key);
+                System.out.println(map.get(key));
+            }
+
+//            System.out.println("key: " + key + " count: " + map.get(key));
+        }
+
+        System.out.println("total: " + total);
+    }
+
     public static void getInverseComplimentsImages2Random() {
         String[] dna = new String[10];
         FileReader reader = null;
@@ -115,8 +180,6 @@ public class Main {
                 e.printStackTrace();
             }
         }
-
-//        getSpacedInverseComplimentColors();
     }
 
     public static void getInverseComplimentsImages2() {
