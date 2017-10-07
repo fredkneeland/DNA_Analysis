@@ -37,7 +37,7 @@ public class InverseCompliment {
 ////                    }
 //                }
 
-                if ((i - j - middleSize) >= 10) {
+                if ((i - j - middleSize) >= 20) {
 //                    System.out.println("adding new size: " + i + " j: " + j);
                     sizes.add(new int[]{j + 1, i - middleSize});
                 }

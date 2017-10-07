@@ -82,6 +82,99 @@ public class ColorsForWords {
         }
     }
 
+    public void getWordStartsForInverseCompliments2(String dna, Map<String, Integer> map, Map<String, Map<Integer, Integer>> wordDistances) {
+        ArrayList<int[]>[] pairs = new ArrayList[20];
+
+
+        for (int i = 0; i < 20; i++) {
+            pairs[i] = InverseCompliment.getAllInverseComplimentPairs(dna, i);
+            for (int j = 0; j < pairs[i].size(); j++) {
+                String start = "";
+
+                int startIndex = pairs[i].get(j)[0];
+
+                if (startIndex - 3 >= 0) {
+                    start = dna.substring(startIndex - 3, startIndex);
+
+                    if (map.containsKey(start)) {
+                        int current = map.get(start) + 1;
+                        map.put(start, current);
+                    } else {
+                        map.put(start, 1);
+                    }
+
+                    if (!wordDistances.containsKey(start)) {
+                        wordDistances.put(start, new HashMap<>());
+                    }
+
+                    if (wordDistances.get(start).containsKey(i)) {
+                        int current = wordDistances.get(start).get(i);
+                        wordDistances.get(start).put(i, current +1);
+                    } else {
+                        wordDistances.get(start).put(i, 1);
+                    }
+                }
+            }
+
+        }
+    }
+
+    public void getWordStartsForInverseCompliments(String dna, Map<String, Integer> map) {
+        int dnaLength = dna.length();
+        int[][] colors = new int[dnaLength][3];
+
+        ArrayList<int[]>[] pairs = new ArrayList[20];
+        int[] pairsCurrentIndex = new int[20];
+        int[] pairsCurrentStart = new int[20];
+        int[] pairsCurrentEnd = new int[20];
+
+//        ArrayList<>
+
+        for (int i = 0; i < 20; i++) {
+            pairs[i] = InverseCompliment.getAllInverseComplimentPairs(dna, i);
+//            pairsCurrentIndex[i] = 0;
+//            if (pairs[i].size() > 0) {
+//                pairsCurrentStart[i] = pairs[i].get(0)[0];
+//                pairsCurrentEnd[i] = pairs[i].get(0)[1];
+//            }
+
+            for (int j = 0; j < pairs[i].size(); j++) {
+                String start = "";
+
+                int startIndex = pairs[i].get(j)[0];
+
+                if (startIndex - 3 >= 0) {
+                    start = dna.substring(startIndex - 3, startIndex);
+
+                    if (start.contains("N"));
+                    else {
+                        for (int k = 0; k < start.length(); k++) {
+                            String current = "" + start.charAt(k);
+                            if (map.containsKey(current)) {
+                                int currentVal = map.get(current) + 1;
+                                map.put(current, currentVal);
+                            } else {
+                                map.put(current, 1);
+                            }
+                        }
+                    }
+
+//                    else if (map.containsKey(start)) {
+//                        int current = map.get(start) + 1;
+//                        map.put(start, current);
+//                    } else {
+//                        map.put(start, 1);
+//                    }
+                }
+            }
+
+        }
+
+//        for (String key : map.keySet()) {
+//            System.out.println("key: " + key + " count: " + map.get(key));
+//        }
+    }
+
     public int[][] getAllSpacedInverseComplimentColors(String dna) {
         int dnaLength = dna.length();
         int[][] colors = new int[dnaLength][3];
