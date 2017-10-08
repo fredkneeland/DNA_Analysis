@@ -12,7 +12,7 @@ public class FileWriter {
             java.io.FileWriter fileWriter =
                     new java.io.FileWriter(fileName);
 
-            // Always wrap dna.analysis.file.FileWriter in BufferedWriter.
+            // Always wrap FileWriter in BufferedWriter.
             BufferedWriter bufferedWriter =
                     new BufferedWriter(fileWriter);
 
@@ -36,7 +36,7 @@ public class FileWriter {
             java.io.FileWriter fileWriter =
                     new java.io.FileWriter(fileName);
 
-            // Always wrap dna.analysis.file.FileWriter in BufferedWriter.
+            // Always wrap FileWriter in BufferedWriter.
             BufferedWriter bufferedWriter =
                     new BufferedWriter(fileWriter);
 

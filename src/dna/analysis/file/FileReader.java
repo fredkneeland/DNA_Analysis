@@ -20,11 +20,11 @@ public class FileReader {
         }
 
         try {
-            // dna.analysis.file.FileReader reads text files in the default encoding.
+            // FileReader reads text files in the default encoding.
             java.io.FileReader fileReader =
                     new java.io.FileReader(fileName);
 
-            // Always wrap dna.analysis.file.FileReader in BufferedReader.
+            // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader =
                     new BufferedReader(fileReader);
 
