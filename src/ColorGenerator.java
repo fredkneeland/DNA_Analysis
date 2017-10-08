@@ -29,6 +29,7 @@ class ColorGenerator {
     double tWeight = weight(tCount, total);    
     double gWeight = weight(gCount, total);
     double cWeight = weight(cCount, total);
+    //TODO implement method
    }
   
   private static double weight(double num, double totalCount) {
