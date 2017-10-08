@@ -1,4 +1,4 @@
-package dna.analysis;
+package dna.analysis.util;
 
 import java.util.*;
 

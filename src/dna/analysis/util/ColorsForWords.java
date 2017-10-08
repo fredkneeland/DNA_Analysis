@@ -1,4 +1,4 @@
-package dna.analysis;
+package dna.analysis.util;
 
 import dna.analysis.inverse.InverseCompliment;
 

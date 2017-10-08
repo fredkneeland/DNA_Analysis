@@ -4,7 +4,7 @@ import dna.analysis.file.FileReader;
 import dna.analysis.file.FileWriter;
 import dna.analysis.image.ImageBuilder;
 import dna.analysis.inverse.InverseCompliment;
-import dna.analysis.util.RandomGenerator;
+import dna.analysis.util.*;
 
 import java.util.*;
 
@@ -41,21 +41,21 @@ public class Main {
 //          writeHexToDNA("./hexFiles/linuxHex2.txt", "./codeDNA/linuxDNA.txt");
 
 
-//        generateImageForStartAndStop("./dna/chromo1Section1.txt", "./dna.analysis.StartAndStop/startAndStopSection1", 130, 10000);
+//        generateImageForStartAndStop("./dna/chromo1Section1.txt", "./dna.analysis.util.StartAndStop/startAndStopSection1", 130, 10000);
 
-//        generateImageForStartAndStop("./dna/random1.txt", "./dna.analysis.StartAndStop/startAndStoprandom1", 130, 10000);
-//        generateImageForStartAndStop("./dna/random2.txt", "./dna.analysis.StartAndStop/startAndStoprandom2", 130, 10000);
-//        generateImageForStartAndStop("./dna/random3.txt", "./dna.analysis.StartAndStop/startAndStoprandom3", 130, 10000);
-//        generateImageForStartAndStop("./dna/random4.txt", "./dna.analysis.StartAndStop/startAndStoprandom4", 130, 10000);
-//        generateImageForStartAndStop("./dna/random5.txt", "./dna.analysis.StartAndStop/startAndStoprandom5", 130, 10000);
-//        generateImageForStartAndStop("./dna/random6.txt", "./dna.analysis.StartAndStop/startAndStoprandom6", 130, 10000);
-//        generateImageForStartAndStop("./dna/random7.txt", "./dna.analysis.StartAndStop/startAndStoprandom7", 130, 10000);
-//        generateImageForStartAndStop("./dna/random8.txt", "./dna.analysis.StartAndStop/startAndStoprandom8", 130, 10000);
-//        generateImageForStartAndStop("./dna/random9.txt", "./dna.analysis.StartAndStop/startAndStoprandom9", 130, 10000);
-//        generateImageForStartAndStop("./dna/random10.txt", "./dna.analysis.StartAndStop/startAndStoprandom10", 130, 10000);
+//        generateImageForStartAndStop("./dna/random1.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom1", 130, 10000);
+//        generateImageForStartAndStop("./dna/random2.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom2", 130, 10000);
+//        generateImageForStartAndStop("./dna/random3.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom3", 130, 10000);
+//        generateImageForStartAndStop("./dna/random4.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom4", 130, 10000);
+//        generateImageForStartAndStop("./dna/random5.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom5", 130, 10000);
+//        generateImageForStartAndStop("./dna/random6.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom6", 130, 10000);
+//        generateImageForStartAndStop("./dna/random7.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom7", 130, 10000);
+//        generateImageForStartAndStop("./dna/random8.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom8", 130, 10000);
+//        generateImageForStartAndStop("./dna/random9.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom9", 130, 10000);
+//        generateImageForStartAndStop("./dna/random10.txt", "./dna.analysis.util.StartAndStop/startAndStoprandom10", 130, 10000);
 //
 //        for (int i = 0; i < 175; i++) {
-//            generateImageForStartAndStop("./dna/chromo1Section" + i + ".txt", "./dna.analysis.StartAndStop/startAndStopSection" + i, 130, 10000);
+//            generateImageForStartAndStop("./dna/chromo1Section" + i + ".txt", "./dna.analysis.util.StartAndStop/startAndStopSection" + i, 130, 10000);
 //        }
 
 //        generateImageForFile("./dna/Bible.txt", "bibleOutput", 130, 10000);
@@ -90,7 +90,7 @@ public class Main {
 //        System.out.println("len: " + dna.length());
 //
 //        int wordSize = 5;
-//        dna.analysis.DNA_word_finder finder = new dna.analysis.DNA_word_finder(dna, wordSize);
+//        dna.analysis.util.DNA_word_finder finder = new dna.analysis.util.DNA_word_finder(dna, wordSize);
 //
 //        finder.getSizes();
 //        finder.printSizes(50);
@@ -301,7 +301,7 @@ public class Main {
 ////            String outputFile;
 ////            outputFile = "./WrappedInverseCompliment/section" + (i);
 ////
-////            dna.analysis.ColorsForWords colors = new dna.analysis.ColorsForWords();
+////            dna.analysis.util.ColorsForWords colors = new dna.analysis.util.ColorsForWords();
 ////            try {
 ////                dna.analysis.image.ImageBuilder.generate(outputFile, colors.getWrappedInverseComplimentColors(dna[i]), 130, 10000);
 ////            } catch (Exception e) {
