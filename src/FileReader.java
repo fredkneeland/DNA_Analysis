@@ -1,56 +1,51 @@
-import java.io.BufferedReader;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
 
 /**
  * Created by fredkneeland on 5/1/17.
+ * Edited by chinmoy159, dated :- 10/8/2017
  */
-public class FileReader {
+
+public class FileReader
+{
     private String fileName;
     private String[] lines;
 
-    public FileReader(String fileName) {
+    public FileReader(String fileName)
+    {
         this.fileName = fileName;
     }
-
-    public String[] getFile() {
+    
+    public String[] getFile()
+    {
         // if we already have the lines then return them
         if (lines != null) {
             return lines;
         }
-
         try {
-            // FileReader reads text files in the default encoding.
-            java.io.FileReader fileReader =
-                    new java.io.FileReader(fileName);
+            // Reading the file using the Scanner Class in Java
+            Scanner Sc = new Scanner (new File(fileName));
+            int counter, i;
+            String St;
 
-            // Always wrap FileReader in BufferedReader.
-            BufferedReader bufferedReader =
-                    new BufferedReader(fileReader);
-
-            // count the number of lines in the file
-            int counter = 0;
-            while(bufferedReader.readLine() != null) {
-                counter++;
-            }
-
+            for (counter = 0; Sc.hasNext(); St = Sc.nextLine());
+            // counting the number of lines in the file.
+            
             lines = new String[counter];
+            //closing the file, before re-setting it
+            Sc.close();
+            
             // re-set up reader
-            fileReader =
-                    new java.io.FileReader(fileName);
-
-            bufferedReader =
-                    new BufferedReader(fileReader);
-
+            Sc = new Scanner (new File(fileName));
             // loop over the lines and put them into string
-            String line;
-            int i = 0;
-            while((line = bufferedReader.readLine()) != null) {
-                lines[i++] = line;
+            for (i = 0; i < counter; ++i) {
+                lines[i] = Sc.nextLine();
             }
-
             // Always close files.
-            bufferedReader.close();
+            Sc.close();
         }
-        catch(Exception e) {
+        catch(FileNotFoundException e) {
+            // Catching the specific error line
             e.printStackTrace();
         }
 
