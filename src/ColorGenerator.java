@@ -24,9 +24,15 @@ class ColorGenerator {
   } 
 
   public static int[] averageColorForLetterCounts(int aCount, int tCount, int gCount, int cCount) {
-     double aMean, tMean, gMean, cMean = 0.0;
-    
+    double total = aCount+tCount+gCount+cCount;
+    double aWeight = weight(aCount, total);
+    double tWeight = weight(tCount, total);    
+    double gWeight = weight(gCount, total);
+    double cWeight = weight(cCount, total);
    }
   
+  private static double weight(double num, double totalCount) {
+    return (num/totalCount);
+  }
     
 }
