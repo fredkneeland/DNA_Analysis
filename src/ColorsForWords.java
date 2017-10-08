@@ -1,5 +1,45 @@
 import java.util.*;
 
+class ColorGenerator{
+  // [0] => Red Color from 0-255
+  // [1] => Green Color from 0-255
+  // [2] => Blue Color from 0-255
+  public static int[] colorGeneratorForLetter(Char letter) {
+      int[] color = new int[3];
+      
+      switch(letter) {
+         case 'A': // Blue
+             color[0] = 50;
+             color[1] = 50;
+             color[2] = 250;
+             break;
+         case 'T': // Yellow
+             color[0] = 250;
+             color[1] = 250;
+             color[2] = 50;
+             break;
+         case 'G': // Green
+             color[0] = 50;
+             color[1] = 250;
+             color[2] = 50;
+             break;
+         case 'C': // Red
+             color[0] = 250;
+             color[1] = 50;
+             color[2] = 50;
+             break;
+         default: // Black
+             color[0] = color[1] = color[2] = 0;
+             break;
+      }
+      return color;
+  } 
+
+  public static int[] averageColorForLetterCounts(int aCount, int tCount, int gCount, int cCount) {
+     // use colorGeneratorForLetter and averages to determine color
+   }   
+}
+
 public class ColorsForWords {
     public int[][] getColorsForWords(String dna) {
         int dnaLength = dna.length();
