@@ -1,5 +1,61 @@
 import java.util.*;
 
+class ColorGenerator{
+  // [0] => Red Color from 0-255
+  // [1] => Green Color from 0-255
+  // [2] => Blue Color from 0-255
+  public static int[] colorGeneratorForLetter(Char letter) {
+      int[] color = new int[3];
+      
+      switch(letter) {
+         case 'A': // Blue
+             color[0] = 50;
+             color[1] = 50;
+             color[2] = 250;
+             break;
+         case 'T': // Yellow
+             color[0] = 250;
+             color[1] = 250;
+             color[2] = 50;
+             break;
+         case 'G': // Green
+             color[0] = 50;
+             color[1] = 250;
+             color[2] = 50;
+             break;
+         case 'C': // Red
+             color[0] = 250;
+             color[1] = 50;
+             color[2] = 50;
+             break;
+         default: // Black
+             color[0] = color[1] = color[2] = 0;
+             break;
+      }
+      return color;
+  } 
+
+  public static int[] averageColorForLetterCounts(int aCount, int tCount, int gCount, int cCount) {
+      int[] averageColor = new int[3];
+    
+      int[] aColor = colorGeneratorForLetter( 'A' );
+      int[] tColor = colorGeneratorForLetter( 'T' );
+      int[] gColor = colorGeneratorForLetter( 'G' );
+      int[] cColor = colorGeneratorForLetter( 'C' );
+    
+      int sumCount = ( aCount + tCount + gCount + cCount );
+    
+      // Red component
+      averageColor[0] = ( ( aCount*aColor[0] ) + ( tCount*tColor[0] ) + ( gCount*gColor[0] ) + ( cCount*cColor[0] ) ) / sumCount;
+      // Green component
+      averageColor[1] = ( ( aCount*aColor[1] ) + ( tCount*tColor[1] ) + ( gCount*gColor[1] ) + ( cCount*cColor[1] ) ) / sumCount;
+      // Blue component
+      averageColor[2] = ( ( aCount*aColor[2] ) + ( tCount*tColor[2] ) + ( gCount*gColor[2] ) + ( cCount*cColor[2] ) ) / sumCount;
+    
+       return averageColor;
+   }   
+}
+
 public class ColorsForWords {
     public int[][] getColorsForWords(String dna) {
         int dnaLength = dna.length();
