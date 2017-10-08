@@ -1,3 +1,7 @@
+package dna.analysis;
+
+import dna.analysis.inverse.InverseCompliment;
+
 import java.util.*;
 
 public class ColorsForWords {

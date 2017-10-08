@@ -1,3 +1,5 @@
+package dna.analysis;
+
 import java.util.*;
 
 public class DNA_word_finder {

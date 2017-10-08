@@ -1,3 +1,5 @@
+package dna.analysis.file;
+
 import java.io.BufferedReader;
 
 /**
@@ -18,11 +20,11 @@ public class FileReader {
         }
 
         try {
-            // FileReader reads text files in the default encoding.
+            // dna.analysis.file.FileReader reads text files in the default encoding.
             java.io.FileReader fileReader =
                     new java.io.FileReader(fileName);
 
-            // Always wrap FileReader in BufferedReader.
+            // Always wrap dna.analysis.file.FileReader in BufferedReader.
             BufferedReader bufferedReader =
                     new BufferedReader(fileReader);
 

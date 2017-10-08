@@ -1,3 +1,7 @@
+package dna.analysis;
+
+import dna.analysis.file.FileReader;
+
 import java.util.HashMap;
 
 public class HexConvertor {

@@ -1,3 +1,7 @@
+package dna.analysis.util;
+
+import dna.analysis.file.FileWriter;
+
 /**
  * Created by fredkneeland on 5/1/17.
  */
